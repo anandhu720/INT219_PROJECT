@@ -8,7 +8,7 @@ let moveSound = new Audio('music/move.mp3');
 let musicSound = new Audio('music/music.mp3');
 
 let score = 0;
-let speed = 5;
+let speed = 8;
 let lastPaintTime = 0;
 
 let food = { x: 10, y: 6 };
@@ -45,7 +45,7 @@ function isCollid(snakeArr) {
 }
 
 function gameEngine() {
-  musicSound.play();
+  // musicSound.play();
   document.getElementById('sc').innerHTML = 'Score : ' + score;
   //updating the snake variable
 
@@ -118,22 +118,22 @@ window.addEventListener('keydown', (e) => {
     case 'ArrowUp':
       inputDir.x = 0;
       inputDir.y = -1;
-      console.log('ArrowUp');
+      // console.log('ArrowUp');
       break;
     case 'ArrowDown':
       inputDir.x = 0;
       inputDir.y = 1;
-      console.log('ArrowDown');
+      // console.log('ArrowDown');
       break;
     case 'ArrowLeft':
       inputDir.x = -1;
       inputDir.y = 0;
-      console.log('ArrowLeft');
+      // console.log('ArrowLeft');
       break;
     case 'ArrowRight':
       inputDir.x = 1;
       inputDir.y = 0;
-      console.log('ArrowRight');
+      // console.log('ArrowRight');
       break;
     default:
       break;
